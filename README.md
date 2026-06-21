@@ -1,10 +1,10 @@
-# Automatic Decision-Making with Complete Three-Layer Cognitive Alignment
+# Complete Four-Layer Decision-Making System with Automatic Alignment
 
-A sophisticated C# application that combines biorhythm calculations, psychological state detection, and cognitive thinking pattern analysis to provide intelligent, context-aware recommendations for optimal decision-making and mental performance.
+A sophisticated C# application that combines biorhythm calculations, psychological state detection, cognitive thinking patterns, and circadian rhythm analysis to provide comprehensive, context-aware recommendations for optimal decision-making, mental performance, and activity scheduling.
 
 ## Overview
 
-This advanced system implements three integrated layers that work together:
+This advanced system implements four integrated layers that work together:
 
 ### Layer 1: 📊 Biorhythmic Alignment
 Calculates human performance cycles:
@@ -18,19 +18,29 @@ Maps biorhythm patterns to psychological states:
 - **BalancedHarmonious**, **LowEnergyReflective**, **StressedFractured**, **FocusedDetermined**
 - **PlayfulSpontaneous**, **CautiousConservative**
 
-### Layer 3: 💭 Cognitive Thinking Styles (10 Styles) - NEW!
+### Layer 3: 💭 Cognitive Thinking Styles (10 Styles)
 Maps mental processing to optimal thinking patterns:
 - **AnalyticalSequential** (🔍), **HolisticSynthetic** (🌐), **IntuitiveFast** (⚡)
 - **DetailOrientedPrecise** (🎯), **CreativeAssociative** (✨), **SystemicStructured** (📐)
 - **AdaptiveFluid** (🌊), **AbstractConceptual** (☁️), **ConcreteExperiential** (🏔️)
 - **IntegrativeSynthesis** (🧩)
 
+### Layer 4: 🕐 Body Timing & Schedule Alignment (NEW!)
+Maps circadian rhythms and chronotypes to optimal activity scheduling:
+- **5 Chronotypes**: ExtremeEarlyBird, Lark, Intermediate, Owl, ExtremeNightOwl
+- **Circadian Markers**: Body temperature, cortisol, melatonin levels
+- **Energy Phases**: Peak, High, Moderate, Low, Trough, Rising
+- **Optimal Activity Times**: When your body is best suited for each activity type
+- **Daily Schedule Generation**: Automatic creation of personalized optimal schedules
+
 The system detects:
-- **What you're capable of RIGHT NOW** (thinking style)
+- **What you're capable of RIGHT NOW** (thinking style + body energy)
 - **How clear your thinking is** (mental clarity, focus, creativity)
 - **If you're in flow state** (optimal mental condition)
-- **When you'll shift to different thinking** (cognitive transitions)
-- **Which decisions suit your current cognitive state** (decision alignment)
+- **Your body's energy level** (circadian phase, energy phase)
+- **Optimal time for activities** (exercise, creative work, decisions, rest)
+- **When you'll shift to different thinking** (cognitive + circadian transitions)
+- **Complete schedule generation** (personalized hourly recommendations)
 
 ## Features
 
@@ -55,21 +65,35 @@ The system detects:
 - **Transition Prediction**: Forecasts when you'll shift mindsets
 - **Stress Detection**: Automatically identifies fractured/stressed states
 
-### NEW: Automatic Cognitive Thinking Alignment (Layer 3)
+### Automatic Cognitive Thinking Alignment (Layer 3)
 
 - **10 Thinking Styles**: Maps cognitive patterns to mental processing modes
 - **Mental Clarity Scoring**: How sharp and lucid your thinking is (0-100%)
-- **Cognitive Capacity Metrics**: 
-  - Focus Intensity (concentration ability)
-  - Creative Capacity (novel idea generation)
-  - Logical Capacity (analytical ability)
-  - Processing Speed (mental quickness)
-  - Intuitive Power (subconscious insight)
+- **Cognitive Capacity Metrics**: Focus, Creativity, Logic, Speed, Intuition
 - **Flow State Detection**: Identifies optimal immersion conditions
-- **Cognitive Quality Assessment**: Overall mental state (Peak/Excellent/Good/Acceptable/Poor)
-- **Cognitive Shift Prediction**: Forecasts when your thinking style will change
-- **Cognitive Health Trends**: Weekly/monthly cognitive patterns and recommendations
-- **Three-Layer Alignment Score**: Biorhythm + Mindset + Cognition combined recommendation
+- **Cognitive Quality Assessment**: Peak/Excellent/Good/Acceptable/Poor
+- **Cognitive Shift Prediction**: Forecasts thinking style changes
+- **Cognitive Health Trends**: Weekly/monthly cognitive patterns
+
+### NEW: Automatic Body Timing & Schedule Alignment (Layer 4)
+
+- **5 Chronotypes**: Identifies your natural sleep/wake pattern
+- **Circadian Rhythm Analysis**: 
+  - Body temperature cycles (correlates with alertness)
+  - Cortisol levels (peak stress hormone - morning alert boost)
+  - Melatonin levels (sleep hormone - evening rise)
+  - 24-hour energy patterns
+- **6 Energy Phases**: Peak, High, Moderate, Low, Trough, Rising
+- **Activity-Specific Timing**:
+  - Optimal times for focused work (analytical tasks)
+  - Optimal times for creative work
+  - Optimal times for physical activity (exercise)
+  - Optimal times for social interaction (meetings)
+  - Optimal times for rest and recovery
+- **Daily Schedule Generation**: Automatic hourly schedule creation
+- **Optimal Time Finder**: Searches time windows to find best time for activity
+- **Schedule Visualization**: Visual representation of daily energy patterns
+- **Four-Layer Alignment**: Biorhythm + Mindset + Cognition + Body Timing
 
 ### Advanced Features
 
@@ -405,6 +429,12 @@ dotnet run MindsetIntegratedProgram.cs
 dotnet run FullSystemIntegrationProgram.cs
 ```
 
+### Run Complete Four-Layer Program
+
+```bash
+dotnet run CompleteSystemProgram.cs
+```
+
 ### Interactive Menus
 
 #### Main Program (BiorhythmDecisionEngine)
@@ -585,11 +615,70 @@ LAYER 3: COGNITION
   Flow:       NO
   Adjustment: ×0.60
 
+LAYER 4: BODY TIMING
+  Time:           2:45 PM (AFTERNOON DIP)
+  Chronotype:     Intermediate
+  Energy Phase:   Trough
+  Energy Level:   22%
+  Alertness:      18%
+  Cortisol:       Low (post-dip)
+  Adjustment:     ×0.50
+
 FINAL RECOMMENDATION: 16/100 ✗ DO NOT PROCEED
-"Critical alert: All three layers misaligned.
-Your mental state is fractured. Avoid major decisions today.
-Recommended: Self-care, rest, seek support.
-Reschedule hiring for in 3 days (when Emotional Intuitive predicted)."
+"Critical alert: ALL FOUR LAYERS misaligned.
+Your mental state is fractured. Your body is in energy trough.
+Your circadian rhythm at minimum. 
+Avoid major decisions today. Avoid hiring until better aligned.
+Recommended: Self-care, rest, seek support, light activity.
+Reschedule hiring for Thursday 11 AM (predicted optimal window)."
+```
+
+### Example 6: Four-Layer Perfect Alignment
+```
+SCENARIO: Launch major creative campaign
+
+LAYER 1: BIORHYTHM
+  Physical:      +0.42 (good energy)
+  Emotional:     +0.88 (high)
+  Intellectual:  +0.65 (good)
+  Harmonic:      72/100 (good week)
+
+LAYER 2: MINDSET
+  Type:          CreativeExpressive
+  Intensity:     94% (peak creative!)
+  Stability:     88%
+  Adjustment:    ×1.12
+
+LAYER 3: COGNITION
+  Primary:       CreativeAssociative (✨)
+  Secondary:     HolisticSynthetic (🌐)
+  Creativity:    98% (PEAK)
+  Clarity:       89%
+  Quality:       Excellent
+  Flow:          YES 🔥
+  Adjustment:    ×1.25
+
+LAYER 4: BODY TIMING
+  Time:          6:45 PM (SECONDARY PEAK)
+  Chronotype:    Intermediate
+  Energy Phase:  High
+  Energy Level:  87%
+  Alertness:     85%
+  Melatonin:     Starting to rise (creativity still high)
+  Body Temp:     Still elevated
+  Adjustment:    ×1.18
+
+COMBINED SCORE:
+  72 (biorhythm) × 1.12 (mindset) × 1.25 (cognition) × 1.18 (body timing)
+  = 119 → Capped at 100/100
+
+FINAL RECOMMENDATION: ✓✓ 100/100 PEAK ALIGNMENT
+
+"SEIZE THIS MOMENT - Perfect storm of all factors.
+Your body and mind are perfectly aligned for creative work.
+Peak creative window estimated 2-3 hours.
+ELIMINATE DISTRACTIONS - This is your rare optimal moment.
+Secondary peak in evening - unusual resource, use wisely."
 ```
 
 ## Key Metrics Explained
