@@ -1,19 +1,15 @@
 """Unit tests for the dependency-free :mod:`text_structure_chunker` engine.
 
-Run with::
+Run from the repository root with::
 
-    python -m unittest text_chunking.test_text_structure_chunker
-
-or simply::
-
-    python text_chunking/test_text_structure_chunker.py
+    python -m unittest discover -s text_chunking -t .
 """
 
 from __future__ import annotations
 
 import unittest
 
-from text_structure_chunker import Chunk, chunk_text
+from text_chunking.text_structure_chunker import chunk_text
 
 
 def kinds(result):
